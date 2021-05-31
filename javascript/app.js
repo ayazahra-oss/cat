@@ -19,21 +19,21 @@ if(ageinput == age ){
 }else { alert('my old 21 years');
 }
 
-var catsname = ['liza','fella','karak','milo',15 ,true, ['code101', 'code102', 'code201']];
-// console.log(catsname);
-// console.log(catsname[1]);
-// console.log(catsname[3]);
-
-// console.log(catsname[0], ',' ,studentsName[2])
-
-// console.log(catsname.length)
-// Start point
-// Comparing between the start point and end point (Count oof the value inside the array)
-// i = i + 1 (increase the i var)
-
+ var catsname = ['liza','fella','karak','milo',15 ,true, ['code101', 'code102', 'code201']];
 
 
 for(var i = 0; i < catsname.length; i++) { document.write('<img src = "https://images.theconversation.com/files/323930/original/file-20200330-146712-1fsv5cs.jpg?ixlib=rb-1.1.0&rect=8%2C33%2C5609%2C3705&q=45&auto=format&w=496&fit=clip"/>') } 
 var ageinput = prompt("What is your cat's name ?");
 
-while (userAge != 21 ) {userAge = prompt ('please enter the age 21 !!!!');}
+while (userAge != 21 )
+ {userAge = prompt ('please enter the age 21 !!!!');}
+
+ let firstName = "milo"
+let lastName = "cz"
+
+function printcatName(fistName, lastName)
+{
+  console.log('catName is', fistName, lastName);
+  document.write(`catName is <b> ${firstName} </b> ${lastName}`);
+}
+ printcatName('milo', 'cz');
